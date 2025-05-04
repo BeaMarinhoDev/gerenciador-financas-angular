@@ -1,0 +1,24 @@
+<div>
+  <h1>Extrato</h1>
+  <p>Here you can view your financial statement.</p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Description</th>
+        <th>Amount</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Transaction data will be populated here -->
+      <tr *ngFor="let transaction of transactions">
+        <td>{{ transaction.date }}</td>
+        <td>{{ transaction.description }}</td>
+        <td>{{ transaction.amount | currency }}</td>
+        <td>{{ transaction.type }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
