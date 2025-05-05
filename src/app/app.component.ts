@@ -3,9 +3,8 @@ import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // Corrigido de "styleUrl" para "styleUrls"
 })
 export class AppComponent {
   title = 'Gerenciador-Financas-Angular';

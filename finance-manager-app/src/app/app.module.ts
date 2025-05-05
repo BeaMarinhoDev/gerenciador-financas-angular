@@ -1,27 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { CadastroComponent } from './cadastro/cadastro.component';
-import { GerenciarCategoriasComponent } from './gerenciar-categorias/gerenciar-categorias.component';
-import { AdicionarCreditoComponent } from './adicionar-credito/adicionar-credito.component';
-import { AdicionarDebitoComponent } from './adicionar-debito/adicionar-debito.component';
-import { ExtratoComponent } from './extrato/extrato.component';
+import { HomeModule } from './home/home.module'; // Certifique-se de que o caminho está correto
+import { LoginModule } from './login/login.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    LoginComponent,
-    CadastroComponent,
-    GerenciarCategoriasComponent,
-    AdicionarCreditoComponent,
-    AdicionarDebitoComponent,
-    ExtratoComponent
-  ],
+  declarations: [AppComponent],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HomeModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]

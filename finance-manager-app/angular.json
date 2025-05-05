@@ -100,5 +100,8 @@
       }
     }
   },
-  "defaultProject": "finance-manager-app"
+  "defaultProject": "finance-manager-app",
+  "cli": {
+    "analytics": "3a619580-0b00-4399-866b-180405f88303"
+  }
 }

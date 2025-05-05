@@ -1,5 +1,21 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { AdicionarCreditoComponent } from './adicionar-credito/adicionar-credito.component';
+import { AdicionarDebitoComponent } from './adicionar-debito/adicionar-debito.component';
+
+const routes: Routes = [
+  { path: 'adicionar-credito', component: AdicionarCreditoComponent },
+  { path: 'adicionar-debito', component: AdicionarDebitoComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}
 
 describe('AppComponent', () => {
   beforeEach(async () => {
