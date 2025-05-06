@@ -1,24 +1,21 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
-    "outDir": "./out-tsc/app",
-    "sourceMap": true,
-    "declaration": false,
-    "module": "esnext",
-    "moduleResolution": "node",
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ],
-    "skipLibCheck": true
+    "module": "esnext",
+    "moduleResolution": "node"
   },
-  "angularCompilerOptions": {
-    "enableIvy": true
-  }
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

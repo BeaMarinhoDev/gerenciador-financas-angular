@@ -1,0 +1,15 @@
+/* filepath: c:\Users\k_bea\Curso_NodeJS\Gerenciador-Financas-Angular\finance-manager-app\src\styles.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

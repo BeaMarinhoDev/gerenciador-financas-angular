@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
-import { HomeModule } from './home/home.module'; // Certifique-se de que o caminho está correto
-import { LoginModule } from './login/login.module';
+import { routes } from './app.routes';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
-    HomeModule,
-    LoginModule
+    RouterModule.forRoot(routes), // Configuração do RouterModule
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

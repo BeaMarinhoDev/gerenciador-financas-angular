@@ -1,0 +1,35 @@
+/* filepath: c:\Users\k_bea\Curso_NodeJS\Gerenciador-Financas-Angular\finance-manager-app\src\app\home\home.component.css */
+.home-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.home-container h1 {
+  color: #007bff;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.actions {
+  margin-top: 20px;
+}
+
+.actions .btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.actions .btn:hover {
+  background-color: #0056b3;
+}
