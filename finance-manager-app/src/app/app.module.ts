@@ -6,13 +6,15 @@ import { routes } from './app.routes';
 import { HomeModule } from './home/home.module';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent // Declarar o componente principal
+  ],
   imports: [
-    BrowserModule,
-    RouterModule.forRoot(routes), // Configuração do RouterModule
-    HomeModule
+    BrowserModule, // Importar o módulo do navegador
+    RouterModule.forRoot(routes), // Configurar as rotas
+    HomeModule // Importar o módulo Home
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // Definir o componente raiz
 })
 export class AppModule { }

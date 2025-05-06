@@ -1,6 +1,6 @@
 import { enableProdMode } from '@angular/core';
 import { platformServer } from '@angular/platform-server';
-import { AppServerModule } from './app/server/app.server.module';
+import { AppServerModule } from './app/app.server.module';
 
 enableProdMode();
 
